@@ -7,7 +7,7 @@ namespace lists
     {
         static void Main(string[] args)
         {
-            // Practice: Planet and Spaceships
+        // Practice: Planet and Spaceships
 
             // In the Main method, place the following code
             List<string> planetList = new List<string>(){"Mercury", "Mars"};
@@ -64,6 +64,32 @@ namespace lists
             planetList.Remove("Pluto");
             Console.WriteLine();
             planetList.ForEach(planet => Console.WriteLine(planet));
+        
+
+        //PRACTICE: RANDOM NUMBERS
+            // Use the following code to create a list of random numbers. Each number will be between 0 and 5.
+            Random random = new Random();
+            List<int> numbers = new List<int> {
+                random.Next(6),
+                random.Next(6),
+                random.Next(6),
+                random.Next(6),
+                random.Next(6),
+                random.Next(6),
+            };
+        
+            for (int i=0; i<numbers.Count; i++) {
+            // Determine if the current loop index is contained inside of the `numbers` list. Print a message to the console indicating whether the index is in the list.
+                if (numbers.Contains(i)) {
+                    Console.WriteLine("numbers list contains " + i);
+                } else {
+                    Console.WriteLine("numbers list does not contain " + i);
+                }
+            }
+        
+        
+        
+        
         }
     }
 }
