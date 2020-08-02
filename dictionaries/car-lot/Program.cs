@@ -96,10 +96,6 @@ namespace car_lot
                     Console.WriteLine();
                 }
             }
-            // foreach (KeyValuePair<string, string> info in )
-            
-            // Console.WriteLine(vehicles[0]["vehicle"]["year"]);
-
         }
     }
 }
